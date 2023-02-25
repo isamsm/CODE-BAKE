@@ -1,0 +1,11 @@
+.main {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15em;
+}
+
+.main .logo {
+    height: 24em;
+}

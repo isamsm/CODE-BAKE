@@ -1,0 +1,96 @@
+.main-prices {
+    padding-top: 3em;
+    text-align: center;
+}
+
+.title-prices {
+    font-size: 1.5em;
+    padding-bottom: 1em;
+}
+
+.card-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-sizes {
+    width: 20em;
+    height: 23em;
+    border: 1px solid #FDC3B8;
+    border-radius: 1em;
+}
+
+.card-fillings {
+    width: 20em;
+    height: 20em;
+    border: 1px solid #FDC3B8;
+    border-radius: 1em;
+}
+
+.card-dough {
+    width: 20em;
+    height: 14em;
+    border: 1px solid #FDC3B8;
+    border-radius: 1em;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.card-titles {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.text-options {
+    text-align: left;
+}
+
+.div-prices-btn {
+    text-align: center;
+}
+
+.prices-btn {
+    background-color: black;
+    color: #FEEFEC;
+    border-radius: 1em;
+    padding: 0.7em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.prices-btn a {
+    text-decoration: none;
+    color: #FEEFEC;
+}
+
+.prices-btn a:hover {
+    color: black;
+}
+
+.prices-btn:hover {
+    background-color: #FEEFEC;
+    color: black;
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .card-sizes {
+        width: 23em;
+    }
+
+    .card-fillings {
+        width: 23em;
+    }
+    
+    .card-dough {
+        width: 23em;
+    }
+    
+}

@@ -1,0 +1,20 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.items-navbar {
+    text-decoration: none;
+    color: #FEEFEC;
+    font-size: 1.3em;
+    text-transform: uppercase;
+}
+
+.items-navbar:hover {
+    color: #ce7d9b;
+}
+
+.active {
+    color: #ce7d9b;
+}

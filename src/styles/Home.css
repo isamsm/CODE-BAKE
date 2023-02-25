@@ -1,0 +1,29 @@
+.main-home {
+    padding: 3em;
+}
+
+.main-home img {
+    height: 18em;
+    border: 1px solid transparent;
+    border-radius: 1em;
+}
+
+.swiper-button-prev {
+    color: black!important;
+}
+
+.swiper-button-next {
+    color: black!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .main-home {
+        padding: 3em 0em 0em 0em;
+    } 
+
+    .main-home img {
+        height: 6em;
+        border: 1px solid transparent;
+        border-radius: 1em;
+    }
+}

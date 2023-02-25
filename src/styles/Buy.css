@@ -1,0 +1,53 @@
+.main-buy {
+    padding-top: 3em;
+}
+
+.title-buy {
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.form-buy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    background-color: white;
+    width: 18em;
+    border: 1px solid #FDC3B8;
+    padding: 1em;
+}
+
+.div-buy-btn {
+    text-align: center;
+}
+
+.buy-btn {
+    background-color: black;
+    color: #FEEFEC;
+    border-radius: 1em;
+    padding: 0.7em;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    transition: .2s ease-in-out;
+    cursor: pointer;
+    margin: 1em;
+}
+
+.buy-btn a {
+    text-decoration: none;
+    color: #FEEFEC;
+}
+
+.buy-btn a:hover {
+    color: black;
+}
+
+.buy-btn:hover {
+    background-color: #FEEFEC;
+    color: black;
+    transform: scale(1.1);
+}

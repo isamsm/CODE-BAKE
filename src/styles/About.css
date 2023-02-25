@@ -1,0 +1,19 @@
+.main-about {
+    text-align: center;
+    padding-top: 3em;
+}
+
+.about-text {
+    font-size: 1.1em;
+}
+
+.info {
+    padding-top: 1em;
+    color: #BE5A72;
+    font-size: 1.2em;
+}
+
+.info a {
+    text-decoration: none;
+    color: #BE5A72;
+}
