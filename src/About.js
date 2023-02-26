@@ -4,13 +4,11 @@ import { AiFillGithub } from 'react-icons/ai';
 import { ImLinkedin2 } from 'react-icons/im';
 
 import Header from "./components/Header";
-import NavBar from "./components/NavBar";
 
 const About = () => {
     return (
         <>
             <Header />
-            <NavBar />
 
             <section className='container-about container-fluid'>
                 <div className='main-about'>

@@ -8,7 +8,6 @@ import Swal from 'sweetalert2'
 import { useCart } from "react-use-cart";
 
 import Header from './components/Header'
-import NavBar from './components/NavBar'
 
 const cake_size_options = [
     { value: 'pequeno', label: 'Pequeno'},
@@ -61,7 +60,6 @@ const Buy = () => {
     return (
         <>
             <Header />
-            <NavBar />
 
             <section className='container-buy container-fluid'>
                 <div className='main-buy'>

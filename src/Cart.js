@@ -5,7 +5,6 @@ import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 import Swal from 'sweetalert2'
 
 import Header from './components/Header'
-import NavBar from './components/NavBar'
 
 const Cart = () => {
     const {
@@ -16,7 +15,6 @@ const Cart = () => {
     return (
         <>
             <Header />
-            <NavBar />
 
             <section className='container-cart container-fluid'> 
                 <div className='main-cart'>
@@ -36,7 +34,7 @@ const Cart = () => {
                                             <CardBody>
                                                 <CardText className='cart-card-text'>
                                                     <p> Bolo de tamanho {item.size.toLowerCase()}, com recheio de {item.filling.toLowerCase()} e massa {item.dough.toLowerCase()}. </p>
-                                                    <p> Para: {item.date} </p>
+                                                    <p> Para: {item.date.split('-').reverse().join('/')} </p>
                                                     <p> <strong> R${item.price},00 </strong> </p>
                                                 </CardText>
                                             </CardBody>

@@ -3,13 +3,11 @@ import './styles/Prices.css'
 import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 
 import Header from './components/Header'
-import NavBar from './components/NavBar'
 
 const Prices = () => {
     return (
         <>
             <Header />
-            <NavBar />
 
             <section className='container-prices container-fluid'>
                 <div className='main-prices'>

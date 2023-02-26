@@ -6,14 +6,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import Header from './components/Header';
-import NavBar from './components/NavBar';
 
 const Home = () => {
   return (
     <>      
       <Header />
-
-      <NavBar />
 
       <section className='container-home container-fluid'>
         <div className='main-home'>
