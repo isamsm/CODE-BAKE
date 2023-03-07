@@ -1,8 +1,8 @@
 <h1> CODE&BAKE </h1>
 
-<h4> :cake: Projeto de uma boleria feito em react, no qual temos uma vitrine, um formulário de encomenda e um carrinho de compras completamente funcional. </h4>
+<h3> :cake: Projeto de uma boleria feito em react, no qual temos uma vitrine, um formulário de encomenda e um carrinho de compras completamente funcional. </h3>
 
-<h4> Link do projeto hospedado: https://code-bake-731nthrd9-isamsm.vercel.app/home </h4>
+<h3> Link do projeto hospedado: https://code-bake-731nthrd9-isamsm.vercel.app/home </h3>
 
 ##
 
