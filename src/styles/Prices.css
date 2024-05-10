@@ -80,17 +80,11 @@
     transform: scale(1.1);
 }
 
-/* @media only screen and (max-width: 600px) {
-    .card-sizes {
-        width: 23em;
-    }
-
-    .card-fillings {
-        width: 23em;
+@media only screen and (max-width: 600px) {
+    .card-prices .col {
+        display: flex;
+        padding-bottom: 5px;
+        justify-content: center;
     }
     
-    .card-dough {
-        width: 23em;
-    }
-    
-} */
+}
