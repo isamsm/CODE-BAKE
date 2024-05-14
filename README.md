@@ -2,7 +2,7 @@
 
 ## Sobre
 
-### Projeto de uma boleria feito em React e Bootstrap, no qual temos uma vitrine, um formulário de encomenda e um carrinho de compras completamente funcional. 
+### Projeto de uma boleria feito em React, no qual temos uma vitrine, um formulário de encomenda e um carrinho de compras completamente funcional. Também foi usada a biblioteca SweetAlert2 para substituir os alertas padrões do navegador.
 
 ## Como usar
 
