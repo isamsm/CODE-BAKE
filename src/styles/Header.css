@@ -9,3 +9,10 @@
 .main .logo {
     height: 24em;
 }
+
+
+@media only screen and (max-width: 600px) {
+    .main .logo {
+        height: 16em;
+    }
+}

@@ -14,7 +14,7 @@ const About = () => {
         <div className="main-about">
           <p className="about-text">
             {' '}
-            Bem-vindo ao Code&Bake, sua confeitaria virtual especializada em
+            Boas vindas ao Code&Bake, sua confeitaria virtual especializada em
             bolos deliciosamente irresistíveis! Nosso projeto, criado com React
             e Bootstrap, une a paixão pela confeitaria com a inovação digital.
             <br/> <br/>
