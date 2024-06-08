@@ -17,28 +17,20 @@ const Home = () => {
           <Swiper
             modules={[ Navigation, Autoplay ]}
             spaceBetween={0}
-            slidesPerView={1}
+            slidesPerView={4}
             navigation
             autoplay
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{
               0: {
-                  slidesPerView: 5,
+                  slidesPerView: 4,
                   spaceBetween: 80,
               },
               425: {
                   slidesPerView: 4,
-                  spaceBetween: 80,
+                  spaceBetween: 0,
               },
-              580: {
-                  slidesPerView: 4,
-                  spaceBetween: 80,
-              },
-              750: {
-                  slidesPerView: 4,
-                  spaceBetween: 80,
-              }
           }}
           >
             <SwiperSlide>

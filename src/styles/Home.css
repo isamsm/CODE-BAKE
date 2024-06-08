@@ -1,5 +1,5 @@
 .main-home {
-    padding: 3em;
+    padding: 3em 3em;
 }
 
 .main-home img {
@@ -17,6 +17,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .main-home {
+        padding: 3em 0em;
+    }
+
     .main-home img {
         height: 6em;
         border: 1px solid transparent;
@@ -25,6 +29,10 @@
 }
 
 @media only screen and (min-width: 601px) and (max-width: 700px) {
+    .main-home {
+        padding: 3em 0em;
+    }
+
     .main-home img {
         height: 8em;
         border: 1px solid transparent;
@@ -33,6 +41,10 @@
 }
 
 @media only screen and (min-width: 701px) and (max-width: 800px) {
+    .main-home {
+        padding: 3em 0em;
+    }
+
     .main-home img {
         height: 10em;
         border: 1px solid transparent;
@@ -41,6 +53,10 @@
 }
 
 @media only screen and (min-width: 801px) and (max-width: 900px) {
+    .main-home {
+        padding: 3em 0em;
+    }
+
     .main-home img {
         height: 11em;
         border: 1px solid transparent;
@@ -49,6 +65,10 @@
 }
 
 @media only screen and (min-width: 901px) and (max-width: 1000px) {
+    .main-home {
+        padding: 3em 0em;
+    }
+    
     .main-home img {
         height: 12em;
         border: 1px solid transparent;
