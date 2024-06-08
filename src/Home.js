@@ -24,7 +24,7 @@ const Home = () => {
             onSwiper={(swiper) => console.log(swiper)}
             breakpoints={{
               0: {
-                  slidesPerView: 4,
+                  slidesPerView: 5,
                   spaceBetween: 80,
               },
               425: {

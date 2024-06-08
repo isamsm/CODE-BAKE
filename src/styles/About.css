@@ -21,3 +21,9 @@
     text-decoration: none;
     color: #BE5A72;
 }
+
+@media (max-width: 600px) {
+    .about-text {
+        width: 100%;
+    }
+}
