@@ -16,12 +16,30 @@ const Home = () => {
         <div className='main-home'>
           <Swiper
             modules={[ Navigation, Autoplay ]}
-            spaceBetween={80}
-            slidesPerView={4}
+            spaceBetween={0}
+            slidesPerView={1}
             navigation
             autoplay
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
+            breakpoints={{
+              0: {
+                  slidesPerView: 4,
+                  spaceBetween: 80,
+              },
+              425: {
+                  slidesPerView: 4,
+                  spaceBetween: 80,
+              },
+              580: {
+                  slidesPerView: 4,
+                  spaceBetween: 80,
+              },
+              750: {
+                  slidesPerView: 4,
+                  spaceBetween: 80,
+              }
+          }}
           >
             <SwiperSlide>
               <img className='first-cake' src='/assets/showcase/first_cake.jpg' alt='primeiro bolo' />

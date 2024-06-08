@@ -1,7 +1,7 @@
 .navbar {
     background-color: black;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .items-navbar {
@@ -17,4 +17,10 @@
 
 .active {
     color: #ce7d9b;
+}
+
+@media (max-width: 600px) {
+    .items-navbar {
+        font-size: 1em;
+    }
 }
