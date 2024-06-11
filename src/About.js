@@ -1,9 +1,7 @@
 import './styles/About.css'
 
-import { AiFillGithub } from 'react-icons/ai'
-import { ImLinkedin2 } from 'react-icons/im'
-
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const About = () => {
   return (
@@ -35,34 +33,10 @@ const About = () => {
             nossas delícias e descubra o verdadeiro prazer de saborear um bolo
             do Code&Bake!{' '}
           </p>
-          <div className="info">
-            <p>
-              {' '}
-              <a
-                href="https://github.com/isamsm"
-                rel="noreferrer"
-                target="_blank"
-              >
-                {' '}
-                <AiFillGithub />{' '}
-              </a>{' '}
-              @isamsm{' '}
-            </p>
-            <p>
-              {' '}
-              <a
-                href="https://www.linkedin.com/in/isamsm/"
-                rel="noreferrer"
-                target="_blank"
-              >
-                {' '}
-                <ImLinkedin2 />{' '}
-              </a>{' '}
-              @isamsm{' '}
-            </p>
-          </div>
         </div>
       </section>
+
+      <Footer />
     </>
   )
 }

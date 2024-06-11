@@ -1,11 +1,12 @@
 import './styles/Home.css'
 
-import { Navigation, Autoplay } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper'
+import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
-import 'swiper/css/navigation';
+import 'swiper/css/navigation'
 
-import Header from './components/Header';
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 const Home = () => {
   return (
@@ -57,6 +58,8 @@ const Home = () => {
           </Swiper>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 }

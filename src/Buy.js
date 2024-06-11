@@ -8,6 +8,7 @@ import Swal from 'sweetalert2'
 import { useCart } from "react-use-cart";
 
 import Header from './components/Header'
+import Footer from './components/Footer'
 
 const cake_size_options = [
     { value: 'pequeno', label: 'Pequeno'},
@@ -133,6 +134,8 @@ const Buy = () => {
                     </div>
                 </div>
             </section>
+
+            <Footer />
         </>
     )
 }
