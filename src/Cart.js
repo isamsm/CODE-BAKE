@@ -5,7 +5,6 @@ import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 import Swal from 'sweetalert2'
 
 import Header from './components/Header'
-import Footer from './components/Footer'
 
 
 const Cart = () => {
@@ -60,8 +59,6 @@ const Cart = () => {
                 </div>
                 }
             </section>
-
-            <Footer />
         </>
     )
 }

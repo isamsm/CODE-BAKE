@@ -3,7 +3,6 @@ import './styles/Prices.css'
 import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 
 import Header from './components/Header'
-import Footer from './components/Footer'
 
 const Prices = () => {
     return (
@@ -83,8 +82,6 @@ const Prices = () => {
                     <button className='prices-btn' onClick={() => window.location.href = 'buy'}> Encomendar </button>
                 </div>
             </section>
-
-            <Footer />
         </>
     )
 }

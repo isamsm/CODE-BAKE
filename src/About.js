@@ -1,7 +1,6 @@
 import './styles/About.css'
 
 import Header from './components/Header'
-import Footer from './components/Footer'
 
 const About = () => {
   return (
@@ -33,10 +32,9 @@ const About = () => {
             nossas delícias e descubra o verdadeiro prazer de saborear um bolo
             do Code&Bake!{' '}
           </p>
+          <p style={{fontWeight: 'bold', margin: '0'}}> © Isa Marques, 2023 </p>
         </div>
       </section>
-
-      <Footer />
     </>
   )
 }
