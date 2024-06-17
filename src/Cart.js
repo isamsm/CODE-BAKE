@@ -12,7 +12,9 @@ const Cart = () => {
         isEmpty,
         items,
         removeItem,
+        emptyCart,
       } = useCart();
+
     return (
         <>
             <Header />
@@ -49,7 +51,15 @@ const Cart = () => {
                         <p> Total: R${items.reduce((soma, item) => item.price + soma, 0)},00 </p>
                     </div>
                     <div className='div-cart-btn'>
-                        <button className='cart-btn' onClick={() => Swal.fire({confirmButtonColor: '#BE5A72', title: 'Oba!', text:'Sua encomenda foi realizada com sucesso!'})}> Finalizar compra </button>
+                        <button className='cart-btn' onClick={() => {
+                            emptyCart()
+                            Swal.fire({
+                                confirmButtonColor: '#BE5A72', 
+                                title: 'Oba!', 
+                                text:'Sua encomenda foi realizada com sucesso!'}) 
+                            }}> 
+                            Finalizar compra 
+                        </button>
                     </div>
                 </>
                 : 
