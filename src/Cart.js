@@ -26,7 +26,7 @@ const Cart = () => {
                 <div className='main-cart'>
                     <h1 className='cart-title'> Carrinho </h1>
                 </div>
-                {items.length !== 0 ? 
+                {items.length !== 0 && items !== null ? 
                 <>
                     <div className='card-cart'>
                         {items.map((item) => (
