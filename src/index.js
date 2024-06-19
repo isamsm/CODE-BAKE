@@ -8,8 +8,6 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import { CartProvider } from "react-use-cart";
-
 import Home from './Home'
 import About from "./About";
 import Prices from "./Prices";
@@ -19,27 +17,23 @@ import Cart from "./Cart";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home />
   },
   {
     path: "/about",
-    element: <About />,
+    element: <About />
   },
   {
     path: "/prices",
-    element: <Prices />,
+    element: <Prices />
   },
   {
     path: "/buy",
-    element:   <CartProvider>
-      <Buy />
-      </CartProvider>,
+    element: <Buy />
   },
   {
     path: "/cart",
-    element: <CartProvider>
-      <Cart />
-      </CartProvider>,
+    element: <Cart />
   }
 ]);
 
