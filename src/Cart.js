@@ -8,15 +8,16 @@ import { useEffect, useState } from 'react'
 const Cart = () => {
     const [items, setItems] = useState([])
 
-    const removeItem = (item) => {
-        const descartedOrder = items.indexOf(item)
-        items.splice(descartedOrder, 1);
-        localStorage.setItem('orders', JSON.stringify(items))
-    }
-
     useEffect(() => {
-        setItems(items ? JSON.parse(localStorage.getItem('orders')) : [])
-    }, [items])
+        let storedItems = JSON.parse(localStorage.getItem('orders'))
+        storedItems ? setItems(storedItems) : setItems([])
+    }, [])
+
+    const removeItem = (item) => {
+        const updatedItems = items.filter(i => i !== item);
+        setItems(updatedItems);
+        localStorage.setItem('orders', JSON.stringify(updatedItems));
+    }
 
     return (
         <>
@@ -26,7 +27,7 @@ const Cart = () => {
                 <div className='main-cart'>
                     <h1 className='cart-title'> Carrinho </h1>
                 </div>
-                {items.length !== 0 || items ? 
+                {items.length !== 0 ? 
                 <>
                     <div className='card-cart'>
                         {items.map((item) => (
@@ -56,6 +57,7 @@ const Cart = () => {
                     <div className='div-cart-btn'>
                         <button className='cart-btn' onClick={() => {
                             localStorage.setItem('orders', JSON.stringify([]))
+                            setItems([]);
                             Swal.fire({
                                 confirmButtonColor: '#BE5A72', 
                                 title: 'Oba!', 
