@@ -9,9 +9,9 @@ const Cart = () => {
     const [items, setItems] = useState([])
 
     const removeItem = (item) => {
-        const updatedItems = items.filter(i => i !== item);
-        setItems(updatedItems);
-        localStorage.setItem('orders', JSON.stringify(updatedItems));
+        const descartedOrder = items.indexOf(item)
+        items.splice(descartedOrder, 1);
+        localStorage.setItem('orders', JSON.stringify(items))
     }
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const Cart = () => {
                 <div className='main-cart'>
                     <h1 className='cart-title'> Carrinho </h1>
                 </div>
-                {items.length !== 0 ? 
+                {items.length !== 0 || items ? 
                 <>
                     <div className='card-cart'>
                         {items.map((item) => (
