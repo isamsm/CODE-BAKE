@@ -1,19 +1,22 @@
 import './styles/Cart.css'
-
-import { useCart } from "react-use-cart";
 import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 import Swal from 'sweetalert2'
 
 import Header from './components/Header'
-
+import { useEffect, useState } from 'react'
 
 const Cart = () => {
-    const {
-        isEmpty,
-        items,
-        removeItem,
-        emptyCart,
-      } = useCart();
+    const [items, setItems] = useState([])
+
+    const removeItem = (item) => {
+        const descartedOrder = items.indexOf(item)
+        items.splice(descartedOrder, 1);
+        localStorage.setItem('orders', JSON.stringify(items))
+    }
+
+    useEffect(() => {
+        setItems(items ? JSON.parse(localStorage.getItem('orders')) : [])
+    }, [items])
 
     return (
         <>
@@ -23,14 +26,14 @@ const Cart = () => {
                 <div className='main-cart'>
                     <h1 className='cart-title'> Carrinho </h1>
                 </div>
-                {!isEmpty ? 
+                {items.length !== 0 ? 
                 <>
                     <div className='card-cart'>
                         {items.map((item) => (
                             <div key={item.id}>
                                 <Row>
                                     <Col className='remove-cart'>
-                                        <button className='remove-cart-btn' onClick={() => removeItem(item.id)}> ⎯ </button>
+                                        <button className='remove-cart-btn' onClick={() => removeItem(item)}> ⎯ </button>
                                     </Col>
                                     <Col>
                                         <Card className='full-card-cart'>
@@ -52,7 +55,7 @@ const Cart = () => {
                     </div>
                     <div className='div-cart-btn'>
                         <button className='cart-btn' onClick={() => {
-                            emptyCart()
+                            localStorage.setItem('orders', JSON.stringify([]))
                             Swal.fire({
                                 confirmButtonColor: '#BE5A72', 
                                 title: 'Oba!', 

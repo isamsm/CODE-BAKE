@@ -5,7 +5,6 @@ import './styles/Buy.css'
 import { Form, FormGroup, Label, Input, Row, Col, Card } from 'reactstrap'
 import Select from 'react-select'
 import Swal from 'sweetalert2'
-import { useCart } from "react-use-cart";
 
 import Header from './components/Header'
 
@@ -29,8 +28,6 @@ const cake_filling_options = [
 ]
 
 const Buy = () => {
-    const { addItem } = useCart();
-
     const [price, setPrice] = useState()
     const [cakeSize, setCakeSize] = useState()
     const [cakeDough, setCakeDough] = useState()
@@ -42,20 +39,38 @@ const Buy = () => {
         : cakeSize?.value === 'medio' ? setPrice(80) 
         : cakeSize?.value === 'pequeno' ? setPrice(50) 
         : setPrice(0)
-    })
+    }, [cakeSize])
 
-    console.log(cakeDate)
+    const handleOrder = () => {
+        if (cakeSize && cakeFilling && cakeDough && cakeDate !== '') {
+            const orderObj = {
+                id: Date.now(),
+                size: cakeSize?.label,
+                dough: cakeDough?.label,
+                filling: cakeFilling?.label,
+                date: cakeDate,
+                price: price,
+            }
 
-    const orderObj = [
-        { 
-            id: [],
-            size: cakeSize?.label,
-            dough: cakeDough?.label,
-            filling: cakeFilling?.label,
-            date: cakeDate,
-            price: price,
+            const existingOrders = JSON.parse(localStorage.getItem('orders')) || []
+            existingOrders.push(orderObj)
+            localStorage.setItem('orders', JSON.stringify(existingOrders))
+            
+            Swal.fire({
+                confirmButtonColor: '#BE5A72',
+                title: 'Oba!',
+                text: 'Pedido adicionado ao carrinho com sucesso!'
+            })
+
+        } else {
+            Swal.fire({
+                confirmButtonColor: '#BE5A72',
+                icon: 'error',
+                title: 'Opa!',
+                text: 'Todos os campos devem ser preenchidos!'
+            })
         }
-    ]
+    }
 
     return (
         <>
@@ -125,11 +140,9 @@ const Buy = () => {
                         </Row>
                     </div>
                     <div className='div-buy-btn'>
-                    {orderObj.map((el) => (
-                        <div key={el.id}>
-                            <button className='buy-btn' onClick={() => cakeSize && cakeFilling && cakeDough != null && cakeDate != '' ?  [addItem(el), Swal.fire({confirmButtonColor: '#BE5A72', title: 'Oba!', text:'Pedido adicionado ao carrinho com sucesso!'})]: Swal.fire({confirmButtonColor: '#BE5A72', icon: 'error', title: 'Opa!', text:'Todos os campos devem ser preenchidos!'})}> Adicionar ao carrinho </button>
-                        </div>
-                    ))}
+                        <button className='buy-btn' onClick={handleOrder}>
+                            Adicionar ao carrinho
+                        </button>
                     </div>
                 </div>
             </section>
