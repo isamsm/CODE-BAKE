@@ -5,9 +5,9 @@ import NavBar from './NavBar'
 const Header = () => {
     return (
         <>
-            <section className='main'> 
+            <header className='main'> 
                 <img className='logo' src='/assets/logo/logo.png' alt='logo' />
-            </section>
+            </header>
 
             <NavBar />
         </>

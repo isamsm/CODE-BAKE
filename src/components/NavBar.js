@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <>
-      <section className='navbar container-fluid'>
+      <navbar className='navbar container-fluid'>
         <Nav>
           <Row>
             <Col>
@@ -58,7 +58,7 @@ const NavBar = () => {
             </Col>
           </Row>
         </Nav>
-      </section>
+      </navbar>
     </>
   );
 };
