@@ -42,25 +42,25 @@ const Home = () => {
           }}
           >
             <SwiperSlide>
-              <img className='first-cake' src={first_cake} alt='primeiro bolo' />
+              <img className='first-cake' src={first_cake} alt='Imagem ilustrative primeiro bolo da vitrine' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='second-cake' src={second_cake} alt='segundo bolo' />
+              <img className='second-cake' src={second_cake} alt='Imagem ilustrative segundo bolo da vitrine' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='third-cake' src={third_cake} alt='terceiro bolo' />
+              <img className='third-cake' src={third_cake} alt='Imagem ilustrative terceiro bolo da vitrine' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='fourth-cake' src={fourth_cake} alt='quarto bolo' />
+              <img className='fourth-cake' src={fourth_cake} alt='Imagem ilustrative quarto bolo da vitrine' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='fifth-cake' src={fifth_cake} alt='quinto bolo' />
+              <img className='fifth-cake' src={fifth_cake} alt='Imagem ilustrative quinto bolo da vitrine' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='sixth-cake' src={sixth_cake} alt='sexto bolo' />
+              <img className='sixth-cake' src={sixth_cake} alt='Imagem ilustrative sexto bolo da vitrine' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='seventh-cake' src={seventh_cake} alt='sétimo bolo' />
+              <img className='seventh-cake' src={seventh_cake} alt='Imagem ilustrative sétimo bolo da vitrine' />
             </SwiperSlide>
           </Swiper>
         </div>
