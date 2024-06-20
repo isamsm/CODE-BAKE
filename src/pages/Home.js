@@ -1,11 +1,19 @@
-import './styles/Home.css'
+import '../styles/Home.css'
 
 import { Navigation, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css';
 import 'swiper/css/navigation'
 
-import Header from './components/Header'
+import first_cake from '../assets/showcase/first_cake.webp'
+import second_cake from '../assets/showcase/second_cake.webp'
+import third_cake from '../assets/showcase/third_cake.webp'
+import fourth_cake from '../assets/showcase/fourth_cake.webp'
+import fifth_cake from '../assets/showcase/fifth_cake.webp'
+import sixth_cake from '../assets/showcase/sixth_cake.webp'
+import seventh_cake from '../assets/showcase/seventh_cake.webp'
+
+import Header from '../components/Header'
 
 const Home = () => {
   return (
@@ -34,25 +42,25 @@ const Home = () => {
           }}
           >
             <SwiperSlide>
-              <img className='first-cake' src='/assets/showcase/first_cake.jpg' alt='primeiro bolo' />
+              <img className='first-cake' src={first_cake} alt='primeiro bolo' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='second-cake' src='/assets/showcase/second_cake.jpg' alt='segundo bolo' />
+              <img className='second-cake' src={second_cake} alt='segundo bolo' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='third-cake' src='/assets/showcase/third_cake.jpg' alt='terceiro bolo' />
+              <img className='third-cake' src={third_cake} alt='terceiro bolo' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='fourth-cake' src='/assets/showcase/fourth_cake.jpg' alt='quarto bolo' />
+              <img className='fourth-cake' src={fourth_cake} alt='quarto bolo' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='fifth-cake' src='/assets/showcase/fifth_cake.jpg' alt='quinto bolo' />
+              <img className='fifth-cake' src={fifth_cake} alt='quinto bolo' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='sixth-cake' src='/assets/showcase/sixth_cake.jpg' alt='sexto bolo' />
+              <img className='sixth-cake' src={sixth_cake} alt='sexto bolo' />
             </SwiperSlide>
             <SwiperSlide>
-              <img className='seventh-cake' src='/assets/showcase/seventh_cake.png' alt='sétimo bolo' />
+              <img className='seventh-cake' src={seventh_cake} alt='sétimo bolo' />
             </SwiperSlide>
           </Swiper>
         </div>

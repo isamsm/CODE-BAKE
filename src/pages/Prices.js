@@ -1,8 +1,8 @@
-import './styles/Prices.css'    
+import '../styles/Prices.css'    
 
 import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 
-import Header from './components/Header'
+import Header from '../components/Header'
 
 const Prices = () => {
     return (

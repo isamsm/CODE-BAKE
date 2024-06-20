@@ -1,8 +1,8 @@
-import './styles/Cart.css'
+import '../styles/Cart.css'
 import { Card, CardBody, CardText, Row, Col } from 'reactstrap'
 import Swal from 'sweetalert2'
 
-import Header from './components/Header'
+import Header from '../components/Header'
 import { useEffect, useState } from 'react'
 
 const Cart = () => {

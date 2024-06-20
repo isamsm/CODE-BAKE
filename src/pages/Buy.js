@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
-import './styles/Buy.css'
+import '../styles/Buy.css'
 
 import { Form, FormGroup, Label, Input, Row, Col, Card } from 'reactstrap'
 import Select from 'react-select'
 import Swal from 'sweetalert2'
 
-import Header from './components/Header'
+import Header from '../components/Header'
 
 const cake_size_options = [
     { value: 'pequeno', label: 'Pequeno'},

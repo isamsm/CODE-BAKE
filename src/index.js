@@ -8,11 +8,11 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Home from './Home'
-import About from "./About";
-import Prices from "./Prices";
-import Buy from "./Buy";
-import Cart from "./Cart";
+import Home from './pages/Home'
+import About from "./pages/About";
+import Prices from "./pages/Prices";
+import Buy from "./pages/Buy";
+import Cart from "./pages/Cart";
 
 const router = createBrowserRouter([
   {
