@@ -21,6 +21,7 @@ const Home = () => {
       <Header />
 
       <section className='container-home container-fluid'>
+        <h1> CODE&BAKE </h1>
         <div className='main-home'>
           <Swiper
             modules={[ Navigation, Autoplay ]}

@@ -11,7 +11,7 @@ const Prices = () => {
 
             <section className='container-prices container-fluid'>
                 <div className='main-prices'>
-                    <h1 className='title-prices'> Tabela de Preços </h1>
+                    <h2 className='title-prices'> Tabela de Preços </h2>
                 </div>
                 <div className='card-prices'>
                     <Row>
@@ -19,7 +19,7 @@ const Prices = () => {
                             <Card className='card-sizes'>
                                 <CardBody>
                                     <CardText className='card-text'>
-                                        <h2 className='card-titles'> Tamanhos </h2>
+                                        <h3 className='card-titles'> Tamanhos </h3>
                                         <p> Vale tanto para bolos redondos quanto quadrados. </p>
                                         <Row className='text-options'>
                                             <Col>
@@ -53,7 +53,7 @@ const Prices = () => {
                             <Card className='card-fillings'>
                                 <CardBody>
                                     <CardText className='card-text'>
-                                    <h2 className='card-titles'> Recheios </h2>
+                                    <h3 className='card-titles'> Recheios </h3>
                                         <p> Não interfere no preço </p>
                                         <h5 className='text-options'> Ninho com morango </h5>
                                         <h5 className='text-options'> Doce de leite com abacaxi </h5>
@@ -68,7 +68,7 @@ const Prices = () => {
                             <Card className='card-dough'>
                                 <CardBody>
                                     <CardText className='card-text'>
-                                        <h2 className='card-titles'> Massas </h2>
+                                        <h3 className='card-titles'> Massas </h3>
                                         <p> Não interfere no preço </p>
                                         <h5 className='text-options'> Massa branca </h5>
                                         <h5 className='text-options'> Massa de chocolate </h5>

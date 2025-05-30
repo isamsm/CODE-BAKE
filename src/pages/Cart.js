@@ -25,7 +25,7 @@ const Cart = () => {
 
             <section className='container-cart container-fluid'> 
                 <div className='main-cart'>
-                    <h1 className='cart-title'> Carrinho </h1>
+                    <h2 className='cart-title'> Carrinho </h2>
                 </div>
                 {items.length !== 0 ? 
                 <>

@@ -78,7 +78,7 @@ const Buy = () => {
 
             <section className='container-buy container-fluid'>
                 <div className='main-buy'>
-                    <h1 className='title-buy'> Faça sua encomenda </h1>
+                    <h2 className='title-buy'> Faça sua encomenda </h2>
                     <div className='form-buy'>
                         <Row>
                             <Col>

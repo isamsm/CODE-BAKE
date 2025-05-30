@@ -2,6 +2,11 @@
     padding-top: 3em;
 }
 
+.container-cart {
+    max-width: 1280px;
+    padding: 0;
+}
+
 .cart-title {
     font-size: 1.5em;
     text-align: center;

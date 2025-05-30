@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+.container-prices {
+    max-width: 1280px;
+    padding: 0;
+}
+
 .title-prices {
     font-size: 1.5em;
     padding-bottom: 1em;

@@ -2,6 +2,14 @@
     padding: 3em 3em;
 }
 
+h1 {
+    display: none;
+}
+
+.container-home {
+    max-width: 1280px;
+}
+
 .main-home img {
     height: 18em;
     border: 1px solid transparent;
